@@ -1,0 +1,30 @@
+.form-sections {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .form-section {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-details {
+    background-color: #f9f9f967;
+  }
+  
+  .shipping-details {
+    background-color: #ffffff60;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+ 

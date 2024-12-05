@@ -1,0 +1,13 @@
+/* Apps.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Asegura que ocupe toda la pantalla */
+  width: 100%; /* Asegura que ocupe todo el ancho */
+  
+  display: flex; /* Aplica flexbox */
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  text-align: center;
+}
+

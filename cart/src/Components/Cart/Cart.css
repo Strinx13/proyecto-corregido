@@ -1,0 +1,94 @@
+.cart-container {
+  padding: 20px;
+  text-align: center;
+  position: relative; /* Contenedor relativo para manejar elementos posicionados */
+}
+
+.cart-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cart-card {
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.cart-image {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.cart-details {
+  margin: 10px 0;
+}
+
+.cart-details h3 {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.cart-details p {
+  font-size: 1em;
+  color: #555;
+}
+
+.remove-btn {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.remove-btn:hover {
+  background-color: #c0392b;
+}
+
+.cart-actions {
+  position: sticky;
+  top: 50%; /* Mantiene los botones centrados verticalmente */
+  transform: translateY(-50%); /* Ajusta el centro de los botones */
+  display: flex;
+  justify-content: space-between; /* Uno a la izquierda, otro a la derecha */
+  width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+  padding: 0 20px; /* Separación horizontal */
+  z-index: 10; /* Prioridad sobre otros elementos */
+}
+
+.clear-btn {
+  background-color: #db3434;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.clear-btn:hover {
+  background-color: #721717;
+}
+
+.checkout-btn {
+  background-color: #1db122;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.checkout-btn:hover {
+  background-color: #45a049;
+}
