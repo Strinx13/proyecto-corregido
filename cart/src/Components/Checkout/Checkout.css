@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh; /* Altura completa de la ventana */
-  width: 192.56vh; /* Ancho completo */
+  width: 100vw; /* Ancho completo */
   margin: 0;
   font-family: Arial, sans-serif;
   background-image: url(../assets/guppy.jpg); /* Ruta correcta de tu imagen */
@@ -26,17 +26,16 @@
   text-align: center;
   box-shadow: 9px 9px 12px rgba(255, 255, 255, 0.2);
   display: flex;
-  flex-direction: row ;
+  flex-direction: row;
   gap: 20px;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten cuando el espacio sea pequeño */
 }
 
 .checkout-container .payment-container h2 {
   margin-bottom: 20px;
   color: #fff;
 }
-.options{
-  margin-left: 5vh;
-}
+
 /* Opciones de pago */
 .checkout-container .payment-container .payment-options {
   display: flex;
@@ -177,6 +176,12 @@
 
   .checkout-container .payment-container .checkout-btn {
     font-size: 0.9em; /* Botón más pequeño */
+  }
+
+  /* Mejora la distribución en pantallas más pequeñas */
+  .checkout-container .payment-container {
+    flex-direction: column;
+    gap: 15px;
   }
 }
 
