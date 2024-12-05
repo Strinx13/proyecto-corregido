@@ -1,6 +1,31 @@
 import React from "react";
-import './Cardform.css'
-const CardForm = ({ onBack, total }) => {
+import { useNavigate } from "react-router-dom";
+import './Cardform.css';
+
+const CardForm = ({ total }) => {
+  const navigate = useNavigate();
+
+  const handleConfirmPayment = () => {
+    // Simular datos de pedido para pasar a PaymentReceipt
+    const orderDetails = {
+      referenceNumber: "123456789",
+      shippingName: document.getElementById("shippingName").value,
+      shippingAddress: document.getElementById("shippingAddress").value,
+      shippingCity: document.getElementById("shippingCity").value,
+      shippingState: document.getElementById("shippingState").value,
+      shippingZip: document.getElementById("shippingZip").value,
+      items: [
+        { name: "Producto 1", quantity: 2, price: 100 },
+        { name: "Producto 2", quantity: 1, price: 50 },
+      ],
+      total: total,
+      paymentMethod: "Tarjeta de Crédito",
+    };
+
+    // Navegar a la página de recibo con los detalles de la orden
+    navigate("/receipt", { state: orderDetails });
+  };
+
   return (
     <div className="payment-form">
       <div className="textcard">
@@ -75,12 +100,13 @@ const CardForm = ({ onBack, total }) => {
 
       {/* Botones para confirmar o regresar */}
       <div className="form-actions">
-        <button type="submit" className="checkout-btn">
-          Confirmar Pago
-        </button>
-        <button className="checkout-btn" onClick={onBack}>
+      <button className="checkout-btn" onClick={() => navigate(-1)}>
           Regresar
         </button>
+        <button className="checkout-btn" onClick={handleConfirmPayment}>
+          Confirmar Pago
+        </button>
+  
       </div>
     </div>
   );

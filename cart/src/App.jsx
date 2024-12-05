@@ -6,7 +6,7 @@ import Cart from './Components/Cart/Cart';
 import Navbar from './Components/Navbar/Navbar';
 import Banner from './Components/Banner/Banner'; // Importar Banner solo donde sea necesario
 import Checkout from './Components/Checkout/Checkout';
-import { ToastContainer } from 'react-toastify';
+import PaymentReceipt from './Components/PaymentReceipt/Paymentreceipt';
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
@@ -52,6 +52,8 @@ function App() {
           }
         />
         <Route path="/checkout" element={<Checkout cartItems={cartItems} />} />
+        <Route path="/receipt" element={<PaymentReceipt />} />
+
       </Routes>
     </Router>
   );

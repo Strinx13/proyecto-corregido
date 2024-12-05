@@ -17,13 +17,10 @@ function Navbar() {
         ☰
       </div>
       <ul className={`navList ${menuActive ? "active" : ""}`}>
-        <li className="navItem"><Link to="/" className="link">Home</Link></li>
-        <li className="navItem"><Link to="/Cart" className="link">Guppys</Link></li>
-        <li className="navItem"><Link to="/Checkout" className="link">Pleco</Link></li>
         <li className="navItem logo">Darky’s</li>
-        <li className="navItem"><Link to="/betta" className="link">Betta</Link></li>
-        <li className="navItem"><Link to="/alimento" className="link">Alimento</Link></li>
-        <li className="navItem"><Link to="/nosotros" className="link">Nosotros</Link></li>
+        <li className="navItem"><Link to="/" className="link">Home</Link></li>
+        <li className="navItem"><Link to="/Cart" className="link">Cart</Link></li>
+
       </ul>
     </nav>
   );

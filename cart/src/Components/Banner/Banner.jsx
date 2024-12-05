@@ -4,9 +4,9 @@ import guppyImage from '../assets/guppy2.jpg';
 
 function Banner() {
   return (
-    <div class="banner">
+    <div className="banner">
       
-  <div class="banner-image">
+  <div className="banner-image">
   <img src={guppyImage} alt="Guppy" style={{ width: "100vh", margin: "20px" }} />
   </div>
   <div class="banner-text">

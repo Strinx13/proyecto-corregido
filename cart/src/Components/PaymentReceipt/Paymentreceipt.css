@@ -1,0 +1,19 @@
+.receipt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    height: 100vh; /* Altura completa de la ventana */
+    width: 192.56vh; /* Ancho completo */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(../assets/fondog.jpg); /* Ruta correcta de tu imagen */
+    background-repeat: no-repeat;
+    background-size: cover; /* Cubrir toda el área visible */
+    background-position: center; /* Centrar la imagen */
+    color: #fff; /* Texto blanco */
+}
+.download-btn{
+    width: 20%;
+}

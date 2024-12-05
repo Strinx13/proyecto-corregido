@@ -18,8 +18,12 @@
   font-weight: bold;
   color: white;
   margin-left: 15px;
+  text-align: right;
 }
-
+.logo:hover{
+  color: tomato;
+  text-decoration: underline overline dotted white;
+}
 .navList {
   list-style: none;
   display: flex;
